@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build properti system",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "properti_main.cpp",
+                "linkedlist_properti.cpp",
+                "array_properti.cpp",
+                "queue_antrian.cpp",
+                "-o",
+                "properti_system.exe",
+                "-I.",
+                "-std=c++11"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compiler: g++"
+        }
+    ]
+}
